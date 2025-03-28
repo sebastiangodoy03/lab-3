@@ -28,15 +28,15 @@
     </div>
   </nav>
 
-  <div class="container-fluid" style="margin: 0; padding: 0;">
-  <%= yield %>
-  </div>
-
   <% if flash[:notice] %>
   <div class="alert alert-success text-center" style="margin-top: 20px;">
     <%= flash[:notice] %>
   </div>
   <% end %>
+
+  <div class="container-fluid" style="margin: 0; padding: 0;">
+  <%= yield %>
+  </div>
 
   <footer class="bg-success text-white text-center py-3 mt-5">
     <p>&copy; 2025 Y</p>
